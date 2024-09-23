@@ -38,7 +38,7 @@
         $email->addContent(
             "text/html", $body
         );
-        $sendgrid = new \SendGrid('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');
+        $sendgrid = new \SendGrid(KEY);
 
         try {
             $response = $sendgrid->send($email);
